@@ -12,10 +12,14 @@ interface ProductCardProps {
 
 const ProductCard = ({ data }: ProductCardProps) => {
   const router = useRouter();
-  const ratingProduct = data.reviews.reduce(
-    (acc: number, item: any) => item.rating + acc,
-    0
-  ) / data.reviews.length;
+  const ratingProduct =
+    data.reviews.reduce((acc: number, item: any) => item.rating + acc, 0) /
+    data.reviews.length;
+
+  // Format the Dropbox URL
+  const formattedImageUrl = data.image
+    .replace("www.dropbox.com", "dl.dropboxusercontent.com")
+    .replace("?dl=0", "");
 
   return (
     <div
@@ -25,18 +29,17 @@ const ProductCard = ({ data }: ProductCardProps) => {
     >
       <div className="flex flex-col items-center gap-2 w-full">
         <div className="aspect-square overflow-hidden relative w-full">
-          {/* Correct usage of the Image component */}
           <Image
-            src={data.image}
+            src={formattedImageUrl}
             alt={data.name}
             fill
             className="object-contain"
+            sizes="100vw"
           />
         </div>
 
         <div className="mt-4 font-bold">{data.category}</div>
         <div className="mt-2">{truncate(data.name)}</div>
-
         <div className="font-bold">{priceFormat(data.price)}</div>
         <div>
           <Rating value={ratingProduct} readOnly />
