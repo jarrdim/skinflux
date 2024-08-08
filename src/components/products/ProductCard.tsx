@@ -35,13 +35,15 @@ const ProductCard = ({data}:ProductCardProps) => {
         
       w-full">
         <div className="aspect-square overflow-hidden relative w-full">
-            <Image
-            src={data.image}
-            alt={data.name}
-            fill
-            className="w-full h-full object-contain"/>
+          
+                    <img
+          src={product.image}
+          alt={product.name}
+                        fill
+          className=""w-full h-full object-contain"
+        />
         </div>
-          <div>{data.image}</div>
+
         <div className="mt-4 font-bold">{data.category}</div>
         <div className="mt-2">
             {truncate(data.name)}
