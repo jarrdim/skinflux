@@ -10,6 +10,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+    "scripts": {
+    "postinstall": "prisma generate",
+     "build": "prisma generate && next build"
+  
+},
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",
     "@emotion/react": "^11.11.4",
@@ -59,9 +64,5 @@
     "typescript": "^5"
   },
   
-  "scripts": {
-    "postinstall": "prisma generate",
-     "build": "prisma generate && next build"
-  
-}
+
 }
