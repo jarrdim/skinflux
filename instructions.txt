@@ -1,0 +1,32 @@
+DATABASE_URL = "mongodb+srv://jack:guru@cluster0.kqryuga.mongodb.net/SkinFlux"
+
+SKINFLUX in src npm run seed
+
+run
+
+
+npx prisma db push 
+
+
+
+STRIPE WEBHOOK LOCALLY
+RUN THIS COMMANDS IN POWERSHELL
+
+
+ > irm get.scoop.sh | iex
+
+ > scoop bucket add stripe https://github.com/stripe/scoop-stripe-cli.git
+ > scoop install stripe
+
+ > stripe login  
+
+ >stripe listen --forward-to localhost:3000/api/stripe-webhook 
+
+
+
+ COPY THE SCRET KEY FROM TERMINAL AND PASTE IT IN ENV FILE WEBBHOOK
+
+
+ npm run seed
+
+
