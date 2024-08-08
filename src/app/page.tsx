@@ -14,11 +14,11 @@ export default async function Home({ searchParams = {} }: Props) {
 
   //FROM DB
 
-  //const products = await getProducts(searchParams);
-  const products = await getProducts(searchParams).catch(error => {
-      console.error("Failed to fetch products:", error);
-      return []; // Return an empty array or handle as needed
-    });
+  const products = await getProducts(searchParams);
+  // const products = await getProducts(searchParams).catch(error => {
+  //     console.error("Failed to fetch products:", error);
+  //     return []; // Return an empty array or handle as needed
+  //   });
 
   if(products.length === 0)
   {
