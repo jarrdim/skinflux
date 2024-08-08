@@ -19,7 +19,7 @@ const ProductCard = ({ data }: ProductCardProps) => {
   // Format the Dropbox URL
   const formattedImageUrl = data.image
     .replace("www.dropbox.com", "dl.dropboxusercontent.com")
-    .replace("?dl=0", "");
+    .replace("?dl=1", ""); // Remove the query parameter if it exists
 
   return (
     <div
@@ -30,18 +30,16 @@ const ProductCard = ({ data }: ProductCardProps) => {
       <div className="flex flex-col items-center gap-2 w-full">
         <div className="aspect-square overflow-hidden relative w-full">
           <Image
-            src={data.image}
+            src={formattedImageUrl}
             alt={data.name}
             fill
             className="object-contain"
             sizes="100vw"
+            quality={75} // Adjust quality if needed
           />
         </div>
 
         <div className="mt-4 font-bold">{data.category}</div>
-        <div>{formattedImageUrl}</div>
-        <div>#######33</div>
-        <div>{data.image}</div>
         <div className="mt-2">{truncate(data.name)}</div>
         <div className="font-bold">{priceFormat(data.price)}</div>
         <div>
