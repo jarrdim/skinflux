@@ -1,6 +1,6 @@
 "use client";
 import React, { useCallback } from "react";
-import { Order, User } from "@prisma/client";
+import { User,Order } from "@prisma/client";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { Container } from "@mui/material";
 
