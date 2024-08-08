@@ -2,20 +2,6 @@
 
 {
 
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
-  
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-
   "env": {
     "DATABASE_URL": "mongodb+srv://banga21harvind:savidur7001234567@cluster0.p1416fk.mongodb.net/SKINNFLUX"
   }
