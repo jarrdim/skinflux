@@ -79,7 +79,7 @@ const ProductDetails = ({ product }: Props) => {
       </div>
       <div>
         <div className="mb-4">
-          <h1 className="text-2xl">"{product.name}"</h1>
+          <h1 className="text-2xl">{product.name}</h1>
         </div>
         <div className="flex items-center gap-2">
           <Rating value={ratingProduct} readOnly />
