@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Banner from "@/components/Banner";
 import Container from "@/components/Container";
-//  import { products } from "../../utils/products";
+  import { products } from "../../utils/products";
 import truncate from "../../utils/truncate";
 import ProductCard from "@/components/products/ProductCard";
 import SearchBar from "@/components/SearchBar";
-import getProducts, { ProductParams } from "../actions/getProducts";
+//import getProducts, { ProductParams } from "../actions/getProducts";
 
 interface Props {
   searchParams: ProductParams;
@@ -14,7 +14,7 @@ export default async function Home({ searchParams = {} }: Props) {
 
   //FROM DB
 
-  const products = await getProducts(searchParams);
+ // const products = await getProducts(searchParams);
   // const products = await getProducts(searchParams).catch(error => {
   //     console.error("Failed to fetch products:", error);
   //     return []; // Return an empty array or handle as needed
