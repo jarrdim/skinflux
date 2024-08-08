@@ -6,16 +6,14 @@
   "scripts": {
     "seed": "node src/seed.js",
     "dev": "next dev",
-  
-    
+
+
     "postinstall": "prisma generate",
     "build": "prisma generate && next build"
-    
+
     "start": "next start",
     "lint": "next lint"
   },
-
-  
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",
     "@emotion/react": "^11.11.4",
@@ -64,5 +62,4 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
-
 }
