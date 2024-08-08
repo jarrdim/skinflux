@@ -30,7 +30,7 @@ const ProductCard = ({ data }: ProductCardProps) => {
       <div className="flex flex-col items-center gap-2 w-full">
         <div className="aspect-square overflow-hidden relative w-full">
           <Image
-            src={formattedImageUrl}
+            src={data.image}
             alt={data.name}
             fill
             className="object-contain"
@@ -39,6 +39,9 @@ const ProductCard = ({ data }: ProductCardProps) => {
         </div>
 
         <div className="mt-4 font-bold">{data.category}</div>
+        <div>{formattedImageUrl}</div>
+        <div>#######33</div>
+        <div>{data.image}</div>
         <div className="mt-2">{truncate(data.name)}</div>
         <div className="font-bold">{priceFormat(data.price)}</div>
         <div>
