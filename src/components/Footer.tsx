@@ -22,7 +22,7 @@ const Footer = () => {
         <FooterList>
           <h3 className="text-base font-bold mb-2">About</h3>
           <span>
-          Whether you're looking for hydration, anti-aging, or acne treatment, SkinFlux has the perfect product to help you achieve
+          Whether you are looking for hydration, anti-aging, or acne treatment, SkinFlux has the perfect product to help you achieve
            radiant, healthy skin. Discover the future of skincare with SkinFlux.
           </span>
         </FooterList>
