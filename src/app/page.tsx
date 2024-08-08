@@ -10,7 +10,8 @@ import getProducts, { ProductParams } from "../actions/getProducts";
 interface Props {
   searchParams: ProductParams;
 }
-export default async function Home({ searchParams }: Props) {
+export default async function Home({ searchParams = {} }: Props) {
+
   //FROM DB
 
   const products = await getProducts(searchParams);
