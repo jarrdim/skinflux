@@ -10,7 +10,7 @@ export default function Home() {
     <Container>
       <div className="p-8">
         <Banner />
-        <SearchBar />
+      
         kkkkkkkkkkkkkkkkkkkk
         </div>
       </div>
