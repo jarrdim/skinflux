@@ -2,10 +2,10 @@
 
 {
 
-    "routes": [
+  "routes": [
     {
-      "src": "/src/app",
-      "dest": "/src/app"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ],
   
