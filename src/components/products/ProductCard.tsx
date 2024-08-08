@@ -41,6 +41,7 @@ const ProductCard = ({data}:ProductCardProps) => {
             fill
             className="w-full h-full object-contain"/>
         </div>
+          <div>{data.image}</div>
         <div className="mt-4 font-bold">{data.category}</div>
         <div className="mt-2">
             {truncate(data.name)}
