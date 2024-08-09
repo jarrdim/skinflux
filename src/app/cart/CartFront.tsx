@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MdArrowBack } from "react-icons/md";
 import Heading from "@/components/Heading";
 import truncate from "../../../utils/truncate";
-//import Button from "@/components/Button";
+import Button from "@/components/Button";
 import CartContent from "./CartContent";
 import priceFormat from "../../../utils/priceFormat";
 import { SafeUser } from "@/types";
