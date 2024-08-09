@@ -69,8 +69,7 @@ const CartFront = ({currentUser} :Props) => {
           </div>
           <div className="mb-8 mt-4">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
-              nisi
+              Review your items before proceeding to payment.
             </p>
           </div>
           {/* <Button label={currentUser ? 'CHECKOUT' : 'LOGIN TO CHECKOUT'} 
