@@ -12,13 +12,19 @@ interface CartContentProps {
 const CartContent = ({ item }: CartContentProps) => {
   const { handleRemoveFromCart, handleCartQtyIncrease, handleCartQtyDecrease } =
     useCart();
+
+  const formattedImageUrl = data.image
+    .replace("www.dropbox.com", "dl.dropboxusercontent.com")
+    .replace("?dl=1", ""); // Remove the query parameter if it exists
+
+  
   return (
     <div className="grid grid-cols-5 text-xs md:text-sm gap-4 borader-t-[1.5px] border-slate-200 py-1 items-center">
       <div className="col-span-2 justify-self-start flex gap-2 md:gap-4">
         <Link href={`/product/${item.id}`}>
           <div className="relative w-[70px] aspect-square ">
             <Image
-              src={item.image}
+              src={formattedImageUrl} 
               alt="image"
               fill
               className="object-contain"
