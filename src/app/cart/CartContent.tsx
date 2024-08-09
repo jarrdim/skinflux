@@ -13,7 +13,7 @@ const CartContent = ({ item }: CartContentProps) => {
   const { handleRemoveFromCart, handleCartQtyIncrease, handleCartQtyDecrease } =
     useCart();
 
-  const formattedImageUrl = data.image
+  const formattedImageUrl = item.image
     .replace("www.dropbox.com", "dl.dropboxusercontent.com")
     .replace("?dl=1", ""); // Remove the query parameter if it exists
 
