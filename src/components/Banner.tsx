@@ -18,8 +18,7 @@ const Banner = () => {
             Welcome to SkinnFluxx
           </h1>
           <p className="text-white md:text-xl text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-            perspiciatis.
+          Skin flux is where personalized skincare meets sustainable beauty
           </p>
           <p className="text-2xl md:text-5xl text-orange-400 font-bold">
             BUY OUR PRODUCTS{" "}
